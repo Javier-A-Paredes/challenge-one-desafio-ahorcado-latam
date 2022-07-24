@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="img/alura.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html"><img src="img/logoAlura.png" alt="Logo de Alura"></a></h1>
+    </header>
+    <main>
+        <div class="container">
+
+
+            <section class="pantalla-inicio">
+                <button class="iniciar-juego">Iniciar Juego</button>
+                <button class="agregar-palabra">Agregar nueva palabra</button>
+            </section>
+
+            <section class="pantalla-nueva-palabra oculto">
+                <input type="text" placeholder="Ingrese una palabra">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>Máx. de 8 letras</p>
+                <button>Guardar y empezar</button>
+                <button>Cancelar</button>
+            </section>
+
+            <section class="pantalla-juego oculto">
+                <div>
+                    <canvas></canvas>
+                </div>
+                <button>Nuevo juego</button>
+                <button>Desistir</button>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src='js/iniciarJuego.js'></script>
+    <script src="js/ingresarNuevaPalabra.js"></script>
+    <script src="js/palabras.js"></script>
+    <!-- <script src=""></script> -->
+</body>
+
+</html>
