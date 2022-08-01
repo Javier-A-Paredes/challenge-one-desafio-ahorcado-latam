@@ -27,6 +27,3 @@ reiniciarPartida.addEventListener('click', e => {
 botonRendirse.addEventListener('click', e => {
     location.reload();    
 })
-
-
-

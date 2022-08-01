@@ -99,7 +99,6 @@ function recibirInputs() {
 }
 
 
-//TODO FUNCION GANAR FUNCION PERDER
 function errorInput(err) {
     if (err) {
         msjError.classList.add('invisible')
