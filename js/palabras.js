@@ -8,4 +8,3 @@ function elegirPalabra() {
     console.log(palabraSecreta)
     return palabra
 }
-
