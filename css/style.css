@@ -25,9 +25,11 @@ header {
     margin-right: auto;
 }
 
+/* ********** PANTALLA INICIAL ********** */
+
 .pantalla-inicio {
     width: 1000px;
-    margin:  15rem auto;
+    margin: 15rem auto;
 }
 
 .pantalla-inicio button {
@@ -43,6 +45,7 @@ header {
     background-color: #0A3871;
     border: 0px;
     font-size: 18px;
+    color: white;
 }
 
 .iniciar-juego:active {
@@ -60,4 +63,99 @@ header {
 
 .agregar-palabra:active {
     background-color: #6b88a8;
+}
+
+
+/* ********** PANTALLA AGREGAR NUEVA PALABRA ********** */
+
+
+.input-nueva-palabra {
+    border: 0px;
+    height: 500px;
+    width: 700px;
+    margin: 60px auto;
+    font-size: 32px;
+    resize: none;
+    display: block;
+}
+
+.aviso-texto {
+
+    width: 120px;
+    margin: 5px auto 5px 150px;
+}
+
+.aviso-texto i,
+.aviso-texto p {
+    color: #495057;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.pantalla-nueva-palabra button {
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.guardar-nueva-palabra {
+    margin-left: 150px;
+    border: 0px;
+    background-color: #0A3871;
+    color: white;
+}
+
+.cancelar {
+    border: 1px solid #0A3871;
+    background-color: white;
+    margin-left: 20px;
+}
+
+/* ********** PANTALLA NUEVO JUEGO ********** */
+
+.pantalla-juego button {
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+canvas {
+    display: block;
+    /* background-color: red; */
+    width: 800px;
+    margin: 0px auto;
+}
+
+.reiniciar-partida {
+    border: 0px;
+    background-color: #0A3871;
+    color: white;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.desistir {
+    border: 1px solid #0A3871;
+    background-color: white;
+    margin-left: 20px;
+}
+
+footer p {
+    position: relative;
+    left: 350px;
+    top: 50px;
+    font-size: 0.9rem;
+    color: #495057;
+    width: 1220px;
+}
+
+.invisible {
+    display: none;
+}
+
+.msj-error {
+    color: red;
+    font-size: 0.7rem;
 }

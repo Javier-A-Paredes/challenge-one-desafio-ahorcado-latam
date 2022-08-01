@@ -29,31 +29,37 @@
             </section>
 
             <section class="pantalla-nueva-palabra oculto">
-                <input type="text" placeholder="Ingrese una palabra">
-                <i class="fa-solid fa-circle-exclamation"></i>
-                <p>Máx. de 8 letras</p>
-                <button>Guardar y empezar</button>
-                <button>Cancelar</button>
+                <textarea class="input-nueva-palabra" placeholder="Ingrese una palabra" name="nueva-palabra"
+                    id="nueva-palabra" cols="30" rows="10"></textarea>
+                <div class="aviso-texto">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Máx. de 8 letras</p>
+                </div>
+                <button class="guardar-nueva-palabra">Guardar y empezar</button>
+                <button class="cancelar">Cancelar</button>
             </section>
 
             <section class="pantalla-juego oculto">
                 <div>
-                    <canvas></canvas>
+                    <canvas width="1200" height="800"></canvas>
                 </div>
-                <button>Nuevo juego</button>
-                <button>Desistir</button>
+                <p class="msj-error invisible">Solo ingresar letras en minúscula.d</p>
+                <button class="reiniciar-partida">Nuevo juego</button>
+                <button class="desistir">Desistir</button>
             </section>
 
         </div>
     </main>
     <footer>
-
+        <p>Alura Challenge 2- Programa Oracle Next Education - Javier Alejandro Paredes - 2022</p>
     </footer>
 
 
     <script src='js/iniciarJuego.js'></script>
-    <script src="js/ingresarNuevaPalabra.js"></script>
     <script src="js/palabras.js"></script>
+    <script src="js/ingresarNuevaPalabra.js"></script>    
+    <script src="js/dibujarLetras.js"></script>
+    <script src="js/dibujarHorca.js"></script>
     <!-- <script src=""></script> -->
 </body>
 

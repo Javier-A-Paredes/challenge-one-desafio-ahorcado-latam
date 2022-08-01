@@ -1,8 +1,10 @@
 let ingresarNuevaPalabra = document.querySelector('.agregar-palabra');
+let guardarNuevaPalabra = document.querySelector('.guardar-nueva-palabra"');
 
-ingresarNuevaPalabra.addEventListener('click', e => {
-    console.log('CLICK NUEVA PALABRA')
+ingresarNuevaPalabra.addEventListener('click', e => {    
     pantallaInicio.classList.add('oculto');
-    pantallaNuevaPalabra.classList.remove('oculto');
-    
+    pantallaNuevaPalabra.classList.remove('oculto');    
 })
+
+
+
