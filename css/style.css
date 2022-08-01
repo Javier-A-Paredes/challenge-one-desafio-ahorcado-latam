@@ -151,11 +151,20 @@ footer p {
     width: 1220px;
 }
 
-.invisible {
-    display: none;
+.aviso-texto {
+    width: 50%;
 }
 
-.msj-error {
+.aviso-texto p {
+    display: block;
     color: red;
     font-size: 0.7rem;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.error {
+    border: 1px solid red
 }

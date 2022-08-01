@@ -30,10 +30,12 @@
 
             <section class="pantalla-nueva-palabra oculto">
                 <textarea class="input-nueva-palabra" placeholder="Ingrese una palabra" name="nueva-palabra"
-                    id="nueva-palabra" cols="30" rows="10"></textarea>
-                <div class="aviso-texto">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <p>Máx. de 8 letras</p>
+                    id="nueva-palabra" cols="30" rows="10" maxlength="8"></textarea>
+                <div class="aviso-texto invisible">
+
+                    <p class="msj-error"><i class="fa-solid fa-circle-exclamation"></i>Solo ingresar letras en
+                        minúscula.</p>
+                    <p class="msj-error"><i class="fa-solid fa-circle-exclamation"></i>Máx. de 8 letras</p>
                 </div>
                 <button class="guardar-nueva-palabra">Guardar y empezar</button>
                 <button class="cancelar">Cancelar</button>
@@ -57,7 +59,7 @@
 
     <script src='js/iniciarJuego.js'></script>
     <script src="js/palabras.js"></script>
-    <script src="js/ingresarNuevaPalabra.js"></script>    
+    <script src="js/ingresarNuevaPalabra.js"></script>
     <script src="js/dibujarLetras.js"></script>
     <script src="js/dibujarHorca.js"></script>
     <!-- <script src=""></script> -->

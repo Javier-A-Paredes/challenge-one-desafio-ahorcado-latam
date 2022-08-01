@@ -74,26 +74,29 @@ function limitarInput(key) {
     }
 }
 
+function recibirInputs() {
 
-document.onkeydown = function (e) {
-    let input = e.key.toUpperCase();
-    if (limiteErrores > 0) {
-        if (!verificarInputLetra(e.key) && limitarInput(e.key)) {
-            if (palabraSecreta.includes(input)) {
-                agregarLetrasCorrectas(palabraSecreta.indexOf(input))
-                for (let i = 0; i < palabraSecreta.length; i++) {
-                    if (palabraSecreta[i] === input) {
-                        checkVictoria(input, i);
+    if (estadoJuego) {
+        document.onkeydown = function (e) {
+            let input = e.key.toUpperCase();
+            if (limiteErrores > 0) {
+                if (!verificarInputLetra(e.key) && limitarInput(e.key)) {
+                    if (palabraSecreta.includes(input)) {
+                        agregarLetrasCorrectas(palabraSecreta.indexOf(input))
+                        for (let i = 0; i < palabraSecreta.length; i++) {
+                            if (palabraSecreta[i] === input) {
+                                checkVictoria(input, i);
+                            }
+                        }
+                    } else {
+                        if (!verificarInputLetra(e.key) && !limitarInput(e.key)) return
+                        checkDerrota(input)
                     }
                 }
-            } else {
-                if (!verificarInputLetra(e.key) && !limitarInput(e.key)) return
-                checkDerrota(input)
             }
         }
     }
 }
-
 
 
 //TODO FUNCION GANAR FUNCION PERDER
@@ -139,9 +142,9 @@ function checkDerrota(input) {
         canvas.lineWidth = 6
         canvas.lineCap = "round"
         canvas.lineJoin = "round"
-        canvas.fillStyle = "green"
-        canvas.fillText("Lo Siento,", 930, 320)
-        canvas.fillText("Perdiste...", 930, 360)
+        canvas.fillStyle = "red"
+        canvas.fillText("Lo siento,", 940, 320)
+        canvas.fillText("Fin del Juego!", 900, 360)
     }
 
 }
